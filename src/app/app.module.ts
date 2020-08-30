@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FeaturedComponent } from './home/featured/featured.component';
 import { PostsComponent } from './home/posts/posts.component';
 import { HomeComponent } from './home/home.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
