@@ -56,4 +56,11 @@ export class ApiService {
       });
     form.reset();
   }
+
+  decorationAlert() {
+    this._snackbar.open('This button is for decoration only', "Close", {
+      duration: this.durationInSeconds * 1000,
+      panelClass: ['decoration-alert'],
+    })
+  }
 }

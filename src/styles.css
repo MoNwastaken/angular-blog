@@ -39,6 +39,15 @@ bg-white {
   color: white !important;
 }
 
+.decoration-alert {
+  background-color: #aca800 !important;
+  color: white !important;
+}
+
 .mat-simple-snackbar-action {
   color: white !important;
+}
+
+.pointer {
+  cursor: pointer;
 }
