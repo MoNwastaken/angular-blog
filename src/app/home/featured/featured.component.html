@@ -1,33 +1,30 @@
 <div class="row featured-box">
-  <div class="col-md-12 col-lg-6"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="" class="featured-image">
-    <p class="featured-title">This is the title of the main featured post</p>
-    <p class="featured-description">This is the description to the most recent featured post. You should
-      check this post out. Also you can write much more text here than the other descriptions. The other
-      ones will be the same description, but shorter and with ... at the end of them. There is plenty of
-      space here tho.</p></div>
+  <div class="col-md-12 col-lg-6"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[0].title }}" class="featured-image">
+    <p class="featured-title">{{ api.posts[0].title }}</p>
+    <p class="featured-description">{{ api.posts[0].body }}</p></div>
   <div class="col-md-12 col-lg-6">
     <div class="row">
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt=""
+      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[1].title }}"
                                                    class="featured-image">
-        <p class="featured-title-sub">Title of less recent featured post</p>
-        <p class="featured-description">This is the description to a recent featured post. You should
+        <p class="featured-title-sub">{{ api.posts[1].title }}</p>
+        <p class="featured-description">{{ api.posts[1].body }}
           check this post out.</p></div>
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt=""
+      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[2].title }}"
                                                    class="featured-image">
-        <p class="featured-title-sub">Title of less recent featured post</p>
-        <p class="featured-description">This is the description to a recent featured post. You should
+        <p class="featured-title-sub">{{ api.posts[2].title }}</p>
+        <p class="featured-description">{{ api.posts[2].body }}
           check this post out.</p></div>
     </div>
     <div class="row">
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt=""
+      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[3].title }}"
                                                    class="featured-image">
-        <p class="featured-title-sub">Title of less recent featured post</p>
-        <p class="featured-description">This is the description to a recent featured post. You should
+        <p class="featured-title-sub">{{ api.posts[3].title }}</p>
+        <p class="featured-description">{{ api.posts[3].body }}
           check this post out.</p></div>
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt=""
+      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[4].title }}"
                                                    class="featured-image">
-        <p class="featured-title-sub">Title of less recent featured post</p>
-        <p class="featured-description">This is the description to a recent featured post. You should
+        <p class="featured-title-sub">{{ api.posts[4].title }}</p>
+        <p class="featured-description">{{ api.posts[4].body }}
           check this post out.</p></div>
     </div>
   </div>
