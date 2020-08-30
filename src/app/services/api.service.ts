@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {NgForm} from "@angular/forms";
 import {Post} from "../models/post.model";
 import {Comment} from "../models/comment.model";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Injectable({
   providedIn: 'root'
@@ -15,8 +16,9 @@ export class ApiService {
   comments: Comment[] = [];
   dataAvailable: boolean = false;
   commentsAvailable: boolean = false;
+  durationInSeconds = 5;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private _snackbar: MatSnackBar) {
   }
 
   getPosts() {
@@ -47,6 +49,10 @@ export class ApiService {
     this.http
       .post(this.addPostsURL, newPost).subscribe(res => {
         console.log(res);
+        this._snackbar.open('Post successfully created', "Close", {
+          duration: this.durationInSeconds * 1000,
+          panelClass: ['success-alert'],
+        })
       });
     form.reset();
   }
