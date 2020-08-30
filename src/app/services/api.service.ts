@@ -9,6 +9,7 @@ export class ApiService {
   getCommentsURL = "https://jsonplaceholder.typicode.com/posts/1/comments";
   addPostsURL = "https://jsonplaceholder.typicode.com/posts";
   posts: Post[] = [];
+  dataAvailable: boolean = false;
 
   constructor(private http: HttpClient) {
   }
@@ -16,6 +17,7 @@ export class ApiService {
   getPosts() {
     this.http.get<any>(this.getPostsURL).subscribe(res => {
       this.posts = res;
+      this.dataAvailable = true;
     }, (err) => {
       console.log(err);
     });

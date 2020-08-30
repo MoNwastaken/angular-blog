@@ -8,10 +8,9 @@ import {ApiService} from "../../services/api.service";
 })
 export class FeaturedComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  constructor(public api: ApiService) { }
 
   ngOnInit(): void {
-    this.api.getPosts();
   }
 
 }

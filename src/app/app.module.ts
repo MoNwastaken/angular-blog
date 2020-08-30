@@ -7,6 +7,7 @@ import { FeaturedComponent } from './home/featured/featured.component';
 import { PostsComponent } from './home/posts/posts.component';
 import { HomeComponent } from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     FeaturedComponent,
     PostsComponent,
-    HomeComponent
+    HomeComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
