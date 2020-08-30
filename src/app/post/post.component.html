@@ -1,0 +1,35 @@
+<app-loading-spinner *ngIf="!api.dataAvailable"></app-loading-spinner>
+<div class="row" *ngIf="api.dataAvailable">
+  <div class="col-md-12 col-lg-8 m-auto content">
+    <img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="" class="featured-image">
+    <div class="title">
+      <h1>{{api.posts[id-1].title}}</h1>
+    </div>
+    <div class="description">
+      {{api.posts[id-1].body}}
+    </div>
+    <div *ngIf="!api.commentsAvailable">
+      <app-loading-spinner></app-loading-spinner>
+      <span class="text-center">Loading comments. Please wait</span>
+    </div>
+    <div *ngIf="api.commentsAvailable">
+      <div class="col-md-12">
+        <div class="blog-comment">
+          <h3 class="comments-title">Comments</h3>
+          <hr/>
+          <ul class="comments">
+            <li class="clearfix" *ngFor="let comments of api.comments">
+              <img src="https://bootdey.com/img/Content/user_1.jpg" class="avatar" alt="">
+              <div class="post-comments">
+                <p class="meta">{{comments.name}}</p>
+                <p>
+                  {{comments.body}}
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

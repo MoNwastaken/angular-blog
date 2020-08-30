@@ -1,28 +1,38 @@
 <div class="row featured-box">
-  <div class="col-md-12 col-lg-6"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[0].title }}" class="featured-image">
+  <div class="col-md-12 col-lg-6"><img
+    src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg"
+    alt="{{ api.posts[0].title }}" class="featured-image" [routerLink]="[api.posts[0].id]">
     <p class="featured-title">{{ api.posts[0].title }}</p>
     <p class="featured-description">{{ api.posts[0].body }}</p></div>
   <div class="col-md-12 col-lg-6">
     <div class="row">
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[1].title }}"
-                                                   class="featured-image">
+      <div class="col-6 featured-image-small"><img
+        src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg"
+        alt="{{ api.posts[1].title }}" [routerLink]="[api.posts[1].id]"
+        class="featured-image">
         <p class="featured-title-sub">{{ api.posts[1].title }}</p>
         <p class="featured-description">{{ api.posts[1].body }}
           check this post out.</p></div>
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[2].title }}"
-                                                   class="featured-image">
+      <div class="col-6 featured-image-small"><img
+        src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg"
+        alt="{{ api.posts[2].title }}" [routerLink]="[api.posts[2].id]"
+        class="featured-image">
         <p class="featured-title-sub">{{ api.posts[2].title }}</p>
         <p class="featured-description">{{ api.posts[2].body }}
           check this post out.</p></div>
     </div>
     <div class="row">
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[3].title }}"
-                                                   class="featured-image">
+      <div class="col-6 featured-image-small"><img
+        src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg"
+        alt="{{ api.posts[3].title }}" [routerLink]="[api.posts[3].id]"
+        class="featured-image">
         <p class="featured-title-sub">{{ api.posts[3].title }}</p>
         <p class="featured-description">{{ api.posts[3].body }}
           check this post out.</p></div>
-      <div class="col-6 featured-image-small"><img src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg" alt="{{ api.posts[4].title }}"
-                                                   class="featured-image">
+      <div class="col-6 featured-image-small"><img
+        src="https://raw.githubusercontent.com/MoNwastaken/test-repo/master/placeholder-image.jpg"
+        alt="{{ api.posts[4].title }}" [routerLink]="[api.posts[4].id]"
+        class="featured-image">
         <p class="featured-title-sub">{{ api.posts[4].title }}</p>
         <p class="featured-description">{{ api.posts[4].body }}
           check this post out.</p></div>
