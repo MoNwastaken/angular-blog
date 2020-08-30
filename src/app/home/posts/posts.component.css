@@ -12,3 +12,12 @@
 .category-line-box {
   margin-bottom: 3%;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.featured-title-sub {
+  font-size: 120%;
+  font-weight: bold;
+}
