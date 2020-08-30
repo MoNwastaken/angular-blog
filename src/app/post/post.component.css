@@ -4,6 +4,7 @@
   left: 17%;
   position: absolute;
   border-radius: 5px;
+  height: auto;
 }
 
 .title {

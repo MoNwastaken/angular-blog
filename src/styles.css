@@ -1,6 +1,18 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #eee;
   overflow-x: hidden;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media only screen and (max-width: 992px) {
+ body {
+   background-color: #FFFFFF;
+ }
 }
 
 .m-auto {
@@ -16,4 +28,8 @@ hr {
 
 bg-white {
   background-color: #FFFF;
+}
+
+.navbar {
+  z-index: 9999;
 }
