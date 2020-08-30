@@ -10,9 +10,12 @@ import {HttpClientModule} from '@angular/common/http';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { PostComponent } from './post/post.component';
 import {RouterModule, Routes} from "@angular/router";
+import { CreatePostComponent } from './create-post/create-post.component';
+import {FormsModule} from "@angular/forms";
 
 const appRoutes: Routes = [
-  { path: '', component:HomeComponent, pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'new', component: CreatePostComponent },
   { path: ':id', component: PostComponent, pathMatch: 'full' },
 ];
 
@@ -24,12 +27,14 @@ const appRoutes: Routes = [
     PostsComponent,
     HomeComponent,
     LoadingSpinnerComponent,
-    PostComponent
+    PostComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
