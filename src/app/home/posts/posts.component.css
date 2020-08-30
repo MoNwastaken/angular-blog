@@ -1,0 +1,14 @@
+.featured-image {
+  width: 100%;
+  border: 2px solid black;
+  transition: filter 300ms ease-in-out;
+}
+
+.category-title {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.category-line-box {
+  margin-bottom: 3%;
+}
