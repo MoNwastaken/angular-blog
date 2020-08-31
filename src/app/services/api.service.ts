@@ -48,7 +48,7 @@ export class ApiService {
 
     this.http
       .post(this.addPostsURL, newPost).subscribe(res => {
-        console.log(res);
+        // console.log(res);
         this._snackbar.open('Post successfully created', "Close", {
           duration: this.durationInSeconds * 1000,
           panelClass: ['success-alert'],
