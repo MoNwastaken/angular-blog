@@ -8,26 +8,41 @@
     </button>
     <div class="collapse navbar-collapse" id="mobile-dropdown">
       <ul class="navbar-nav navbar-right ml-auto">
-        <li class="nav-item" data-toggle="collapse" data-target="#mobile-dropdown">
+        <li class="nav-item d-none d-lg-block">
           <a href="" class="nav-link" routerLink="">Home</a>
         </li>
-        <li class="nav-item" data-toggle="collapse" data-target="#mobile-dropdown">
+        <li class="nav-item d-lg-none" data-toggle="collapse" data-target="#mobile-dropdown">
+          <a href="" class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item  d-none d-lg-block">
+          <a href="" class="nav-link" routerLink="/new">New</a>
+        </li>
+        <li class="nav-item  d-lg-none" data-toggle="collapse" data-target="#mobile-dropdown">
           <a href="" class="nav-link" routerLink="/new">New</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle pointer" data-toggle="dropdown"
              data-target="news-dropdown">News <span class="caret"></span></a>
           <div class="dropdown-menu" aria-labelledby="news-dropdown">
-            <a class="dropdown-item pointer" (click)="api.decorationAlert()">First type of news</a>
+            <a class="dropdown-item pointer d-none d-lg-block" (click)="api.decorationAlert()">First type of news</a>
+            <a class="dropdown-item pointer d-lg-none" (click)="api.decorationAlert()" data-toggle="collapse" data-target="#mobile-dropdown">First type of news</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item pointer" (click)="api.decorationAlert()">Second type of news</a>
+            <a class="dropdown-item pointer d-none d-lg-block" (click)="api.decorationAlert()">Second type of news</a>
+            <a class="dropdown-item pointer d-lg-none" (click)="api.decorationAlert()" data-toggle="collapse" data-target="#mobile-dropdown">Second type of news</a>
+
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link pointer" (click)="api.decorationAlert()">Reviews</a>
+          <a class="nav-link pointer d-none d-lg-block" (click)="api.decorationAlert()">Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pointer" (click)="api.decorationAlert()">Info</a>
+          <a class="nav-link pointer d-lg-none" (click)="api.decorationAlert()" data-toggle="collapse" data-target="#mobile-dropdown">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pointer d-none d-lg-block" (click)="api.decorationAlert()">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pointer d-lg-none" (click)="api.decorationAlert()" data-toggle="collapse" data-target="#mobile-dropdown">Info</a>
         </li>
       </ul>
     </div>
